@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     encrypt        = true
-    key            = "product/terraform.tfstate"
+    key            = "w4product/terraform.tfstate"
     bucket         = "devops-quoctran-terraform-state-s3"
     profile        = "default"
     region         = "ap-southeast-1"
