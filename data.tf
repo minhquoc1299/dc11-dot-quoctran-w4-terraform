@@ -4,3 +4,10 @@ data "aws_vpc" "selected" {
     values = ["devops-vpc"]
   }
 }
+
+data "aws_subnets" "vpc" {
+  filter {
+    name   = "vpc-id"
+    values = [data.aws_vpc.selected.id]
+  }
+}
