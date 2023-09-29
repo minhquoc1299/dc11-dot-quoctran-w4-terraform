@@ -3,3 +3,5 @@ output "vpc_id" {
     for s in data.aws_vpc.selected : s
   ]
 }
+
+# demo
